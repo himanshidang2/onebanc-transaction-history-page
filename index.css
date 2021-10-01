@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0%;
+    background-color: rgb(162, 231, 228);
+}
+.container{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
+    border:2px  solid rgb(43, 42, 42);
+    background-color: rgb(252, 253, 251);
+    width: 50rem;
+    box-sizing: border-box;
+    margin: auto;
+    display: block;
+}
+
+.container #modal{
+ 
+    background-color: #e7af9a;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    padding-top: 18px;
+    left: 35%;
+    overflow: auto;
+    top: 20px;
+ 
+  }
+
+  .container #cross{
+    height: 15px;
+    width: auto;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: #939393;
+    gap: 3rem;
+    height: 5%;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    padding: 2%;
+    margin: 0%;
+    width: 100%;
+}
+
+.img-circular{
+    width: 50px;
+    height: 50px;
+    background-image: url('images/dp.png');
+    background-size: cover;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+   }
+
+.chat{
+    overflow-y: scroll;
+    overflow-x: hidden;
+   }
+
+   .detail
+       {
+         font-size: 20px;
+       }  
+
+   .date
+       {
+         text-align: center;
+         position: relative;
+         margin-top: 2rem;
+         color:black;
+        }
+    .date:before{
+        content:"";
+        display: block;
+        width:21rem;
+        height: 0.14rem;
+        position:absolute;
+        background-color: grey;
+        left:0;
+        top:50%;
+    }
+   
+    .date:after{
+        content:"";
+        display: block;
+        width:21rem;
+        height: 0.15rem;
+        position:absolute;
+        background-color: grey;
+        right:0;
+        top:50%
+    }
+
+    .paid{
+ 
+        margin-top: 3rem;
+        width:25rem;
+        border:2px  solid rgb(43, 42, 42);
+        margin-left: auto;
+        margin-right: 2rem;
+        display: flex;  
+    }
+
+    .left-pane .left-pane-text .fas{
+
+        font-size:2.2rem;
+        margin-left: 1rem;
+        margin-top: 2.5rem;
+        letter-spacing: 0.5rem;
+        color:rgb(43, 42, 42);
+   
+    }
+
+
+    .left-pane .left-pane-text span{
+
+        font-size: 3.2rem;  
+        margin-top: 5.5rem;
+        color:rgb(43, 42, 42);
+        margin-left: 1rem;
+   }
+
+   .left-pane p{
+    margin-left: 1rem;
+    line-height: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: grey;
+   
+  }
+   .left-pane .right-pane-text{
+   
+      margin-top: 2.5rem;
+      width: 40%;
+      position: relative;
+
+    }
+
+    .left-pane .right-pane-text .fa-check{
+
+        color:rgb(149, 179, 120);
+        font-size: 1.2rem;  
+        margin-right: 5px;
+    }
+
+    .d-left{
+
+    text-align: right;
+    font-size: 0.8rem;
+    margin-right: 2rem;
+    margin-top:0.5rem ;
+    color: grey;
+    }
+
+    .requested{
+        margin-top: 3rem;
+        width:25rem;
+        border:2px  solid rgb(43, 42, 42);
+        margin-left: auto;
+        margin-right: 2rem;
+        display: flex;
+    }
+
+
+    .requested .btn{
+
+        border:none;
+        outline:none;
+        padding: 0.4rem 2rem;
+        border-radius: 8px;
+        border:2px solid rgba(167, 121, 121, 0.644);
+        background-color: rgb(199, 161, 144);;
+        margin: 0rem 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        color:rgb(43, 42, 42);
+
+    }
+
+    .requested .right-pane-text .fa-link{
+
+        color:rgb(172, 169, 169);
+        transform: rotate(134deg);
+        letter-spacing: 0.2rem;
+        margin-right: 5px;
+    }
+
+    .left-pane-text{
+        width: 60%;
+    }
+
+    .right-pane{
+        margin-right: auto;
+        margin-left: 2rem;
+        width: 50%;
+        cursor: pointer;
+    }
+    .left-pane{
+        cursor: pointer;
+    }
+
+    .right-pane .left-pane-text .fas{
+        font-size:2.2rem;
+        margin-left: 1rem;
+        margin-top: 2.5rem;
+        letter-spacing: 0.5rem;
+        color:rgb(43, 42, 42);
+    }
+
+    .right-pane .left-pane-text span{
+        font-size: 3.2rem;  
+        margin-top: 0.5rem;
+        color:rgb(43, 42, 42);
+        margin-left: 1rem;
+    }
+
+    .right-pane p{
+
+        margin-left: 1rem;
+        line-height: 0.8rem;
+        font-size: 1rem;
+        margin-top:0.5rem;
+        margin-bottom: 0.5rem;
+        color:grey;
+    }
+
+    .right-pane .right-pane-text{
+        margin-top: 2.5rem;
+        color:rgb(43, 42, 42);
+        width: 40%;
+        position: relative;
+    }
+
+    .right-pane .right-pane-text .fa-check{
+        color:rgb(87, 170, 4);
+        font-size: 1.2rem;
+        margin-right: 5px;
+        }
+
+    .d-right{
+        text-align: center;
+        font-size: 0.8rem;
+        margin-left: -2.85rem;
+        margin-top: 0.5rem;
+        color: grey;
+        font-family: 'Times New Roman', serif;
+
+    }
+
+    .buttons{
+        display: flex;
+        margin:0 1rem;
+    }
+
+    .buttons .btn {
+        background-color:rgb(192, 62, 62);
+        margin:0 1rem;
+        margin-bottom: 1rem;
+        font-family: 'Times New Roman', serif;
+        border-radius: 8px;
+        border:2px solid rgb(0, 0, 0);
+
+    }
+
+    .buttons .btn-sm     {
+
+        background-color:rgb(131, 197, 107);
+        font-family: 'Times New Roman', serif;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        border:none;
+        outline:none;
+        padding: 0.1rem 1rem;
+        border-radius: 8px;
+        border:2px solid rgb(0, 0, 0);
+        color:rgb(43, 42, 42);
+    }
+
+
+    .received .right-pane-text .fa-link{
+
+        color:rgb(172, 169, 169);
+        margin-left: -0.1rem;
+        font-size: 1.1rem;  
+        transform: rotate(135deg);
+        letter-spacing: 0.2rem;
+    }
+
+    .received .right-pane-text .fa-chevron-right{
+
+        margin-left: 8rem;
+
+    }
+
+    .right-pane-text .fa-chevron-right{
+        position: absolute;
+        bottom: 10px;
+        right: 12px;
+        font-size: 1.4rem;
+        color:rgb(43, 42, 42);
+    }
